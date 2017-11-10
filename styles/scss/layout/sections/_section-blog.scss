@@ -1,0 +1,35 @@
+.list-blog{
+  li{
+    margin: 0 0 50px 0;
+    @include display-flex;
+
+    &:nth-child(2n){
+      @include flex-direction(row-reverse);
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .info-blog{
+    padding: 0 40px;
+
+    p{
+      margin-bottom: 40px;
+    }
+  }
+
+  .blog-photo{
+    max-width: 100%;
+    max-height: 405px;
+    overflow: hidden;
+    border: 1px solid #dbdbdb;
+  }
+}
+
+@media (max-width: 991px) {
+  .list-blog li:nth-child(2n){
+    @include flex-direction(row);
+  }
+}

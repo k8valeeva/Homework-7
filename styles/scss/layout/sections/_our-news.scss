@@ -1,0 +1,39 @@
+.our-news{
+  background: #edeff1;
+  text-align: center;
+
+  .h-our-news{
+    margin-bottom: 85px;
+    color: $text-color;
+  }
+
+  .flex-news{
+    @include flex-direction(column);
+  }
+}
+.list-our-news{
+  @include display-flex;
+  margin: 0;
+
+  .news-photo{
+    max-width: 100%;
+    max-height: 255px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .news-info{
+    text-align: center;
+    padding: 30px;
+
+    p{
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (max-width: 991px){
+  .our-news .h-our-news{
+    margin-bottom: 30px;
+  }
+}

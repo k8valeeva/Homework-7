@@ -1,0 +1,42 @@
+.top-footer{
+  text-align: center;
+  background: #d75d0e;
+  padding: 100px 0;
+  color: #fff;
+  font: $secondary-font-family;
+
+  a:hover{
+    border-bottom: 1px solid;
+  }
+}
+@media (max-width: 991px) {
+  .top-footer ul{
+    margin-bottom: 25px;
+  }
+}
+
+.bottom-footer{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, -0.8)),
+  url("../../img/bg-newsletter.jpg") 50% 0 no-repeat;
+  @include background-size(cover);
+  color: $text-color-secondary;
+  text-align: center;
+  height: 300px;
+  padding: 90px 0;
+
+  a.info-site:hover{
+    border-bottom: 1px solid;
+  }
+}
+
+@media (max-width: 991px){
+  .top-footer,
+  .bottom-footer{
+    padding: 40px 0;
+  }
+
+  .bottom-footer{
+    height: auto;
+  }
+}
+

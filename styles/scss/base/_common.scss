@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body{
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+}
+
+a, button,
+a:not([href]):not([tabindex]) {
+  cursor: pointer;
+  outline: none;
+
+  &:hover{
+    color: $text-color-secondary;
+  }
+}
+
+input,
+textarea{
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btn-read-more,
+.btn-blog{
+  background: $text-color-secondary;
+  padding: 10px 25px;
+  line-height: 20px;
+  border: none;
+  @include border-radius(50px);
+
+  &:hover{
+    color: $text-color-secondary;
+    background: #612316;
+  }
+}
+
+h3{
+  font: $captions-font-size $captions-font;
+  margin: 0 auto 15px;
+}
+section{
+  padding: 90px 0;
+}
+
+@media (max-width: 991px){
+  section{
+    padding: 40px 0;
+  }
+}
+
+h4{
+  font: 27px $captions-font;
+  margin-bottom: 15px;
+}
+
+.btn-blog{
+  font: 18px $btn-font;
+  color: $text-color-secondary;
+  padding: 10px 35px;
+  margin-bottom: 15px;
+}
+
+.first-btn-color{
+  background: #dd4b2b;
+}
+
+.second-btn-color{
+  background: #4b4e73;
+}

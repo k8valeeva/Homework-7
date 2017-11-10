@@ -1,0 +1,63 @@
+.header {
+  padding: 50px 0;
+
+  .navbar{
+    width: 100%;
+  }
+
+  .logo {
+    max-height: 28px;
+    overflow: hidden;
+    padding: 0;
+    margin-left: 15px;
+  }
+
+  .navbar-nav{
+    padding: 0;
+    margin: 15px 0 0 0;
+    text-align: end;
+    width: auto;
+  }
+
+  .navbar-toggler{
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .top-menu {
+    font: 18px $btn-font;
+
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: none;
+      position: relative;
+      transition:color 0.5s ease;
+
+      &:hover {
+        color: $text-color-secondary;
+      }
+
+      &::after{
+        position: absolute;
+        content: '';
+        top:0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        transform-origin: left;
+        transition:width 0.5s ease;
+        z-index:-1;
+      }
+
+      &:hover::after {
+        width: 100%;
+        background-color: #dd4b2b;
+        @include border-radius(50px);
+      }
+    }
+  }
+}
+
