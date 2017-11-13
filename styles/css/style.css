@@ -89,10 +89,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 100%;
 }
 
-img {
-  vertical-align: middle;
-}
-
 body {
   font-size: 15px;
   line-height: 30px;
