@@ -3,6 +3,10 @@
   max-width: 100%;
 }
 
+img{
+  vertical-align: middle;
+}
+
 body{
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -12,7 +16,7 @@ body{
 a, button,
 a:not([href]):not([tabindex]) {
   cursor: pointer;
-  outline: none;
+  outline: none !important;
 
   &:hover{
     color: $text-color-secondary;
